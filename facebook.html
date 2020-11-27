@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
 
@@ -10,12 +11,12 @@
 .container {
         display: grid;    /*The CSS Grid Layout Module offers a grid-based layout system,
         with rows and columns, making it easier to design web pages without having to use floats and positioning. */
-        grid-template-columns: repeat(auto-fit, 300px); /* Width and height for the box */
-       justify-content: space-evenly;  /*space evenly between content */
-        grid-row-gap: 30px; /* gap between row  */
-        grid-column-gap: 30px;  /* gap between column */
-        margin: 40px 40px 40px 40px;  /*margin outter layer top, left, botten, right */
-
+        grid-template-columns: repeat(auto-fit, 350px); /* Width and height for the box */
+       /*justify-content: space-evenly;  /*space evenly between content */
+        grid-row-gap: 10px; /* gap between row  */
+        grid-column-gap: 5%;  /* gap between column */
+  /*      margin: 40px 40px 40px 40px;  /*margin outter layer top, left, botten, right */
+ justify-content: center;
     }
 
 
@@ -31,35 +32,25 @@
 
   }
 
-
-
-
-
-
 </style>
-
-
-</head>
 <body>
-
-
-
-
-
-
-
 
   <div class="container">
 
      <div class="character">
 
-             <div>
-                 <h3>#5. The Express</h3>
-             </div>
-             <p >It’s another football movie, this one with an even smaller role for Boseman. It’s Boseman’s first feature credit. The movie as a whole is a solid biopic. Following the life of Ernie Davis, it is a traditional inspirational film.
-                Often it doesn’t transcend the cliches of the genre, but the performances alone are enough to elevate the film particularly from its lead, Rob Brown. It’s earnest and effective at the message it is trying to convey.</p>
-            <a  href="https://en.wikipedia.org/wiki/The_Express:_The_Ernie_Davis_Story" target="_blank">Read More</a>
-     </div>
+          <h2> Introduktion </h2>
+
+            <div class="flex-container">
+
+              <div class="flex-item1"> <h>  </h2> </div>
+              <div class="flex-item2">2</div>
+              <div class="flex-item3">3</div>
+
+            </div>
+
+
+  </div>
 
 
        <div class="character">
@@ -75,9 +66,60 @@
 
 
 
+<style>
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item1, .flex-item2, .flex-item3 {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 50%;
+}
+
+
+
+/* Responsive layout - makes a one column-layout instead of two-column layout
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+*/
+
+}
+</style>
+</head>
+<body>
+
+<h1>Responisve Flexbox</h1>
+
+<p>The "flex-direction: row;" stacks the flex items horizontally (from left to right).</p>
+<p>The "flex-direction: column;" stacks the flex items vertically (from top to bottom).</p>
+<p><b>Resize the browser window to see that the direction changes when the
+screen size is 800px wide or smaller.</b></p>
+
+<div class="flex-container">
+  <div class="flex-item-left">1</div>
+  <div class="flex-item-right">2</div>
+</div>
+
+</body>
+</html>
 
 
 
 
- </body>
+
+
+</body>
 </html>
