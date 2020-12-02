@@ -5,15 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
+.body{
+margin: 0px;
+}
+
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto auto auto auto;
+  grid-template-columns: auto auto auto auto ;
   grid-gap: 5px;
 /*  background-color: grey;*/
   padding: 10px;
-  margin: 0% 15% 0% 15%;
-
+  margin: 0% 10% 0% 10%;
 }
 
 .grid-item {
@@ -23,7 +26,7 @@
 }
 
 .item1 {
-  grid-column: 1 / span 9;
+  grid-column: 1 / span 4;
   grid-row: 1;
   position: relative;
 padding-bottom: 1%;
@@ -45,11 +48,11 @@ position: relative;
 }
 
 .item10{
- grid-column: 1/ span 9;
+ grid-column: 1/ span 4;
  grid-row: 2;
 }
 
-.item4, .item5, .item6, .item7, .item7, .item8   {
+.item4, .item5, .item6, .item7 {
 background-color: #808080;
 }
 
@@ -69,15 +72,14 @@ background-color: #808080;
 
     </div>
     <div class="grid-item item10"> The G.O.A.T (Greatest of all time) </div>
- <div class="grid-item item2"></div>
-  <div class="grid-item item3"></div>
+
   <div class="grid-item item4">Timeline</div>
   <div class="grid-item item5">about</div>
   <div class="grid-item item6">frends</div>
   <div class="grid-item item7">Photos</div>
-  <div class="grid-item item8">more</div>
-  <div class="grid-item item9"></div>
-  <div class="grid-item item11"></div>
+
+
+
 </div>
 
 
@@ -98,8 +100,9 @@ background-color: #808080;
   flex-direction: row;
   font-size: 30px;
   text-align: center;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 20%;
+  margin-right: 20%;
+
 }
 
 .flex-item-left {
@@ -112,13 +115,20 @@ background-color: #808080;
   background-color: dodgerblue;
   padding: 10px;
   flex: 50%;
+
 }
 
+.flex-container > div {
+  margin-left:  10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
+/*
 /* Responsive layout - makes a one column-layout instead of two-column layout */
 @media (max-width: 800px) {
   .flex-container {
     flex-direction: column;
-  }
+  }*/
 }
 </style>
 </head>
